@@ -110,13 +110,13 @@
                     var FirDecade = L.layerGroup([Navarro]);
                     
                     var Navarra = L.marker([42.334700, -83.052641]).bindPopup('John Doe').addTo(map),
-                        Montinella = L.marker ([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map);
+                        Montinella = L.marker ([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map);
                     
                     var SecDecade = L.layerGroup([Navarra, Montinella]);
                     
                     var OverlayMaps = {
-                        "FirDecade" : FirDecade,
-                        "SecDecade" : SecDecade
+                        "1910-1919" : FirDecade,
+                        "1920-1929" : SecDecade
                     };
                    
                     L.control.layers(null, OverlayMaps).addTo(map);                    
