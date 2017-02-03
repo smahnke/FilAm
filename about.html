@@ -90,6 +90,7 @@
                     <hr>
                 </div>
                 <div id="map"></div>
+                <div id="map2"></div>
                 <script>
                     var map = L.map('map',{
                     center: [42.250177, -83.522428],
@@ -97,6 +98,15 @@
                     });
 
                     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+                    
+                    var map = L.map('map',{
+                    center: [42.250177, -83.522428],
+                    zoom: 15
+                    });
+                    
+                    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',{
                     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     }).addTo(map);
                 </script>
