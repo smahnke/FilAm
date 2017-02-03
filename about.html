@@ -30,8 +30,12 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <style>
-        #map {
-            width: 1130px;
+        #AnnMap {
+            width: 960px;
+            height: 500px;
+        }
+        #DetMap {
+            width:960px;
             height: 500px;
         }
     </style>
@@ -89,9 +93,9 @@
                     </h2>
                     <hr>
                 </div>
-                <div id="map"></div>
+                <div id="AnnMap"></div>
                 <script>
-                    var map = L.map('map',{
+                    var AnnMap = L.map('map',{
                     center: [42.250177, -83.522428],
                     zoom: 15
                     });
@@ -100,8 +104,9 @@
                     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     }).addTo(map);
                 </script>
+                <div id="DetMap"></div>
                 <script>
-                    var map = L.map('map',{scrollWheelZoom:false}).setView([43.64701, -79.39425], 15);
+                    var DetMap = L.map('map',{scrollWheelZoom:false}).setView([43.64701, -79.39425], 15);
 
                     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
