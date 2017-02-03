@@ -105,12 +105,17 @@
                     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     }).addTo(map);
                     
+                    var Navarro = L.marker([42.350680, -83.059966]).bindPopup('Vicente A. Navarro (1919), 11 E. Alexandrine Ave, Detroit MI').addTo(map);
+                    
+                    var FirDecade = L.layerGroup([Navarro]);
+                    
                     var Navarra = L.marker([42.334700, -83.052641]).bindPopup('John Doe').addTo(map),
                         Montinella = L.marker ([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map);
                     
                     var SecDecade = L.layerGroup([Navarra, Montinella]);
                     
                     var OverlayMaps = {
+                        "FirDecade" : FirDecade,
                         "SecDecade" : SecDecade
                     };
                    
