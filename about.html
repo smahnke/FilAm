@@ -98,8 +98,7 @@
                     
                     var map = L.map('map2',{
                     center: [42.331561, -83.049799],
-                    zoom: 15,
-                    layers: [null, SecDecade]    
+                    zoom: 15    
                     });
                     
                     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',{
@@ -115,7 +114,7 @@
                         "SecDecade" : SecDecade
                     };
                    
-                    L.control.layers(null, SecDecade).addTo(map);                    
+                    L.control.layers(null, OverlayMaps).addTo(map);                    
                 </script>
                 </div>
                 <div class="col-md-6">
