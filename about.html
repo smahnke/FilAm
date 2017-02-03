@@ -84,7 +84,7 @@
                     <hr>
                 </div>
                 <div id="map" style="width:500px;height:500px;vertical-align;Top;float:left"></div>
-                <div id="map2"></div>
+                <div id="map2" style="width:500px;height:500px;vertical-align;Top;float:right"></div>
                 <script>
                     var map = L.map('map',{
                     center: [42.250177, -83.522428],
@@ -95,7 +95,7 @@
                     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     }).addTo(map);
                     
-                    var map2 = L.map('map',{
+                    var map = L.map('map2',{
                     center: [42.250177, -83.522428],
                     zoom: 15
                     });
