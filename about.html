@@ -104,6 +104,8 @@
                     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',{
                     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     }).addTo(map);
+                    
+                    var marker = L.marker([42.334700, -83.052641]).bindPopup('John Doe').addTo(map);
                 </script>
                 </div>
                 <div class="col-md-6">
