@@ -98,7 +98,8 @@
                     
                     var map = L.map('map2',{
                     center: [42.331561, -83.049799],
-                    zoom: 15
+                    zoom: 15,
+                    layers: [null, SecDecade]    
                     });
                     
                     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',{
@@ -109,6 +110,13 @@
                         Montinella = L.marker ([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map);
                     
                     var SecDecade = L.layerGroup([Navarra, Montinella]);
+                    
+                    var OverlayMaps = {
+                        "SecDecade" : SecDecade
+                    };
+                   
+                    var layerControl = L.control.layers(null, OverlayMaps);
+                    map.addControl(layerControl);                    
                 </script>
                 </div>
                 <div class="col-md-6">
