@@ -96,6 +96,8 @@
                     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     }).addTo(map);
                     
+                    var Melanio = L.marker([]).bindPopup('Javierto, Melanio, 631 Tappan Ave., Ann Arbor, MI. Mechanical Engineering, College of Engineering').addTo(map);
+                    
                     var map = L.map('map2',{
                     center: [42.331561, -83.049799],
                     zoom: 13    
@@ -110,7 +112,7 @@
                     
                     var FirDecade = L.layerGroup([Navarro, Javierto]);
                     
-                    var Navarra = L.marker([42.334700, -83.052641]).bindPopup('John Doe').addTo(map),
+                    var Navarra = L.marker([42.334700, -83.052641]).bindPopup('Navarra, Salvador F. (1922), 225 Bagley Ave, Detroit MI. General course, Central High School').addTo(map),
                         Montinella = L.marker ([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map);
                     
                     var SecDecade = L.layerGroup([Navarra, Montinella]);
