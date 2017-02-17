@@ -118,12 +118,14 @@
                     var Navarro = L.marker([42.350680, -83.059966]).bindPopup('Vicente A. Navarro (1919), 11 E. Alexandrine Ave, Detroit MI').addTo(map),
                         Javierto = L.marker([42.406591, -83.026255]).bindPopup('Javierto, Melanio (1920), 631 Tappan Ave, Ann Arbor, MI, Mechanical Engineering, College of Engineering').addTo(map);
                     
-                    var FirDecade = L.layerGroup([Navarro, Javierto]);
+                    var FirDecade = L.layerGroup([Javierto]);
                     
                     var Navarra = L.marker([42.334700, -83.052641]).bindPopup('Navarra, Salvador F. (1922), 225 Bagley Ave, Detroit MI. General course, Central High School').addTo(map),
-                        Montinella = L.marker ([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map);
-                    
-                    var SecDecade = L.layerGroup([Navarra, Montinella]);
+                        Montinella = L.marker ([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map),
+                        Manzanero = L.marker ([42.415848, -83.100520]).bindPopup('Manzanero, Esteban M. (1921), 80 Church St, Detroit, MI. Civil Engineering, Valparaiso University').addTo(map),
+                        Ruiz = L.marker ([42.374284, -82.975360]).bindPopup('Ruiz, Elias L. (1921), 2946 St. Jean Ave, Detroit, MI. Civil Engineering, University of Detroit').addTo(map);
+                        
+                    var SecDecade = L.layerGroup([Navarro, Navarra, Montinella, Manzanero, Ruiz]);
                     
                     var OverlayMaps = {
                         "1910-1919" : FirDecade,
