@@ -106,6 +106,15 @@
                         Abada = L.marker([42.271220, -83.739413]).bindPopup('Abada, Esteban R. (1921), 822 Oakland Ave, English, Uni of Michigan').addTo(map),
                         Asuzano = L.marker([42.270331, -83.740978]).bindPopup('Asuzano, Eustaquio A. (1921), 914 South State St. Civil Engineering, Uni of Michigan').addTo(map);
                     
+                    var SecDecadeAA = L.layerGroup([Melanio, Jose, Kaparas, Fernandez, Fernando, Maranon, Marare, Abada, Asuzano]);                                        
+                    
+                    var OverlayMapsAA = {
+                        "1910 - 1919" : FirDecadeAA,                        
+                        "1920 - 1929" : SecDecadeAA                    
+                    };                                        
+                    
+                    L.control.layers(null, OverlayMapsAA).addTo(map);
+                    
                     var map2 = L.map('map2',{
                     center: [42.331561, -83.049799],
                     zoom: 13    
