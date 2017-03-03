@@ -106,6 +106,15 @@
                         Abada = L.marker([42.271220, -83.739413]).bindPopup('Abada, Esteban R. (1921), 822 Oakland Ave, English, Uni of Michigan').addTo(map),
                         Asuzano = L.marker([42.270331, -83.740978]).bindPopup('Asuzano, Eustaquio A. (1921), 914 South State St. Civil Engineering, Uni of Michigan').addTo(map);
                           
+                    var SecDecadeAA = L.layerGroup([Melanio, Jose, Kaparas, Fernandez, Fernando, Maranon, Marare, Abada, Asuzano]);
+                    
+                    var OverlayMapsAA = {
+                        "1910 - 1919" = FirDecadeAA,
+                        "1920 - 1929" = SecDecadeAA
+                    };
+                    
+                    L.control.layers(null, OverlayMapsAA).addTo(map);
+                    
                     var map = L.map('map2',{
                     center: [42.331561, -83.049799],
                     zoom: 13    
@@ -118,7 +127,7 @@
                     var Navarro = L.marker([42.350680, -83.059966]).bindPopup('Vicente A. Navarro (1919), 11 E. Alexandrine Ave, Detroit MI').addTo(map),
                         Valenzuela = L.marker([42.349475, -83.006129]).bindPopup('Jose T. Valenzuela (1917), 992 Canton Ave, Detroit, MI, Chemical Engineering, University of Michigan').addTo(map);
                           
-                    var FirDecade = L.layerGroup([Navarro, Valenzuela, Abada]);
+                    var FirDecade = L.layerGroup([Navarro, Valenzuela]);
                     
                     var Navarra = L.marker([42.334700, -83.052641]).bindPopup('Navarra, Salvador F. (1922), 225 Bagley Ave, Detroit MI. General course, Central High School').addTo(map),
                         Montinella = L.marker ([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map),
@@ -133,7 +142,7 @@
                         Paguyo = L.marker([42.353534, -83.065245]).bindPopup('Paguyo, Manuel A. (1922) 4638 Cass Ave, Detroit, MI, Literary, Detroit Junior College').addTo(map),
                         Villareal = L.marker([42.337382, -83.053920]).bindPopup('Villareal, Mariano Conltj y (1922) 126 West Columbia Street, Detroit, MI, Commercial auto mechanic, Cass Technical High School').addTo(map);
 
-                        var SecDecade = L.layerGroup([Navarro, Navarra, Montinella, Manzanero, Ruiz, Conlu, Espiritu, Hernandez, Aguilar, Casaclang, Manzanero, Paguyo, Villareal]);
+                    var SecDecade = L.layerGroup([Navarro, Navarra, Montinella, Manzanero, Ruiz, Conlu, Espiritu, Hernandez, Aguilar, Casaclang, Manzanero, Paguyo, Villareal]);
                     
                     var OverlayMaps = {
                         "1910-1919" : FirDecade,
