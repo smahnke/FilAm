@@ -95,10 +95,6 @@
                     L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
                     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     }).addTo(map);
-                    
-                    var Paulilio = L.marker([42.279781, -83.739619)].bindPopup('Paulilio, Alejandro J. (1917) 236 South Thayer St. Ann Arbor, MI, Law, University of Michigan').addTo(map);
-                    
-                    var FirDecadeAA = L.layerGroup([Paulilio]);
                                             
                     var Melanio = L.marker([42.274468, -83.738242]).bindPopup('Javierto, Melanio (1921) 631 Tappan Ave., Ann Arbor, MI. Mechanical Engineering, College of Engineering').addTo(map),
                         Jose = L.marker([42.272759, -83.743803]).bindPopup('Jose, Esteban L. (1921), 425 Cross St. Ann Arbor, MI. English, University of Michigan; Suguitan, Juan C. Civil Engineering, Uni of Michigan; Suyat, Donato T. High School, Ann Arbor High').addTo(map),
@@ -109,15 +105,6 @@
                         Marare = L.marker([42.275301, -83.733802]).bindPopup('Marare, Vicente Del R. (1921), 215 S. University Ave, Ann Arbor,  MI, Municipal Government, Uni of Michigan').addTo(map),
                         Abada = L.marker([42.271220, -83.739413]).bindPopup('Abada, Esteban R. (1921), 822 Oakland Ave, English, Uni of Michigan').addTo(map),
                         Asuzano = L.marker([42.270331, -83.740978]).bindPopup('Asuzano, Eustaquio A. (1921), 914 South State St. Civil Engineering, Uni of Michigan').addTo(map);
-                    
-                    var SecDecadeAA = L.layerGroup([Melanio, Jose, Kaparas, Fernandez, Fernando, Maranon, Marare, Abada, Asuzano]);                                        
-                    
-                    var OverlayMapsAA = {
-                        "1910 - 1919" : FirDecadeAA,                        
-                        "1920 - 1929" : SecDecadeAA                    
-                    };                                        
-                    
-                    L.control.layers(null, OverlayMapsAA).addTo(map);
                     
                     var map2 = L.map('map2',{
                     center: [42.331561, -83.049799],
