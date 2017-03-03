@@ -116,7 +116,8 @@
                     }).addTo(map);
                     
                     var Navarro = L.marker([42.350680, -83.059966]).bindPopup('Vicente A. Navarro (1919), 11 E. Alexandrine Ave, Detroit MI').addTo(map),
-                        Valenzuela = L.marker([42.349475, -83.006129]).bindPopup('Jose T. Valenzuela (1917), 992 Canton Ave, Detroit, MI, Chemical Engineering, University of Michigan').addTo(map);
+                        Valenzuela = L.marker([42.349475, -83.006129]).bindPopup('Jose T. Valenzuela (1917), 992 Canton Ave, Detroit, MI, Chemical Engineering, University of Michigan').addTo(map),
+                        
                     
                     var FirDecade = L.layerGroup([Navarro, Valenzuela]);
                     
@@ -127,9 +128,10 @@
                         Conlu = L.marker ([42.361012, -82.953085]).bindPopup('Conlu, Mariano (1921), 443 Connors Ave. Detroit, MI. Cass Technical High School').addTo(map),
                         Espiritu = L.marker ([42.369746, -82.971301]).bindPopup('Espiritu, Celestino (1921), 11488 Kercheral Ave, Detroit, MI. Machinist, Ford Motor Co.').addTo(map),
                         Hernandez = L.marker ([42.415856, -83.100510]).bindPopup('Hernandez, Amado Z. (1921), 80 Church St. Detroit, MI, Civil Engineering, Tri-State College').addTo(map),
-                        Aguilar = L.marker([42.347811, -83.060400 ]).bindPopup('Buenaventura Aguilar (1922), 93 Parsons St., Detroit, MI, Engineering, Detroit Junior College').addTo(map);
+                        Aguilar = L.marker([42.347811, -83.060400 ]).bindPopup('Buenaventura Aguilar (1922), 93 Parsons St., Detroit, MI, Engineering, Detroit Junior College').addTo(map),
+                        Casaclang = L.marker([42.334716, -83.052824]).bindPopup('Casaclang, Cornelio E. (1922), 225 Bagley Ave., Detroit, MI, Mechanical Engineering, University of Detroit').addTo(map);
                     
-                    var SecDecade = L.layerGroup([Navarro, Navarra, Montinella, Manzanero, Ruiz, Conlu, Espiritu, Hernandez, Aguilar]);
+                    var SecDecade = L.layerGroup([Navarro, Navarra, Montinella, Manzanero, Ruiz, Conlu, Espiritu, Hernandez, Aguilar, Casaclang]);
                     
                     var OverlayMaps = {
                         "1910-1919" : FirDecade,
@@ -185,7 +187,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; S. Mahnke 2017</p>
                 </div>
             </div>
         </div>
