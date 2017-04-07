@@ -27,7 +27,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 </head>
 
 <body>
@@ -47,7 +48,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="mural.html">Immigrant Imprints</a>
+                <a class="navbar-brand" href="index.html">Immigrant Imprints</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -75,81 +76,116 @@
     </nav>
 
     <div class="container">
-      <div class="row">
-            <div class="box">
-                <div class="col-lg-12 text-center">
-                    <div id="carousel-example-generic" class="carousel slide">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators hidden-xs">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive img-full" src="Det Only Fil1.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="Phil Street1.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/Chinatown3.jpg" alt="">
-                            </div>
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="icon-next"></span>
-                        </a>
-                    </div>
-                    <h2 class="brand-before">
-                        <small>Immigrant Imprints</small>
-                    </h2>
-                    <h1 class="brand-name">Featured Pages</h1>
-                    <hr class="tagline-divider">
-                    <h2>
-                        <small>By
-                            <strong>S. Mahnke</strong>
-                        </small>
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">
-                        <strong>About</strong>
-                    </h2>
-                    <hr>
-                    <img class="img-responsive img-border img-left" src="img/Decay Chinatown.jpg" width="400" height="400" alt="">
-                    <hr class="visible-xs">
-                    <p>This site explores Filipinx American movement and the struggle for representation within Michigan's urban landscape.</p>
-                    <p>As place development is characteristic of urban transformation, changes in infrastructure may have the effect of strengthening a sense of place or fragmenting urban space. The story of Asian Pacific Islander Americans (APA) in Michigan is a story of interrupted spaces and fragmented communities. With over 100 years of APA settlement in Michigan, the communities' displacement due to zoning laws, prejudice, and urban planning has contributed to such movements as the upheaval and transfer of an entire Chinatown, relocation to the suburbs or other states, and migrations to low-income, crime-infested downtown areas such as Detroit's Cass Corridor.</p>
-                    <p>What's at stake in the disruption of these communities is a disruption of sustained cultural practices and values as well as a means of community advocacy and negotiation of resources. The following pages explore: To what degree are APA voices representative in the physical urban landscape, and what forces promote and inhibit this voice? Gaining agency of expression in a given locale then largely becomes a question of negotiating public space, the extent to which APA communities can establish claims to space for identity formation, community advocacy, and access to resources.</p>
-                    <p>A look at material structures in the urban landscape helps illustrate how established heritage spaces allow ethnic communities the potential for organizing, gathering, and renewal. With a specific focus on the Filipinx American community, the following pages explore some of the first Fil-Am immigrant settlements in Michigan, the evolution of Michigan's only Fil-Am Cultural Center, and finally, the Fil-Am struggle to erect city murals. It's my belief that oral histories combined with an investigation of the material through cultural buildings, street names, monuments, and art can illuminate the invisible but rich immigrant histories of Midwestern Filipinx Americans and inform of the struggle to sustain heritage places in the face of urban developmental and economic challenges.</p>  
-                </div>
-            </div>
-        </div>
 
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Understanding Urban Space:
-                        <strong>Helpful Terms</strong>
+                    <h2 class="intro-text text-center">Early Filipinx Settlement:
+                        <strong>The First Students</strong>
                     </h2>
                     <hr>
-                    <p><strong>Public Memory</strong> -- </p>
-                    <p><strong>Public Sphere</strong> -- </p>
-                    <p><strong>Territoriality</strong> -- To read territory is to read a degree of power over space, and certainly their relationship is inextricable. Our behaviors and orientations are daily influenced by material-territoriality; parking lots, buildings, street signs constrict our spatial movements and monopolize a degree of visual public attention.  The relationship between human territoriality and urban public space has opened insights into economies of visibility and public attention, as well as the territory-making capacity of certain groups to participate in spatial forms of public discourse. In Brighenti's (2010) study of graffiti writers and urban territoriality, she moves away from static notions of territorial space and power to seeing territoriality as a process of ongoing negotiations between various stakeholders. This naturally resists primordialist and strategist claims that certain groups are "'naturally' attached to some place or region--such as the 'Fatherland'" or as in strategism, insisting territoriality only refers to establishing control over a given space (p. 324). Brighenti's view of territoriality allows for the concept to be a study of ongoing negotiations of place-meaning and practice that are marked by specific communities and materials. Territoriality is then "deeply social in the sense of something that is coessential to the innner and outer relationships within multiplicity of socii" (p.324).</p>
                 </div>
+                <p><h4 class="intro-ext text-center">Filipinx Student Immigrants in Ann Arbor and Detroit</h4></p>
+                <div id="map" style="width:550px;height:500px;vertical-align;Top;float:left"></div>
+                <div id="map2" style="width:550px;height:500px;vertical-align;Top;float:right"></div>
+                <script>
+                    var map = L.map('map',{
+                    center: [42.280031, -83.742498],
+                    zoom: 15
+                    });
+
+                    L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+                                            
+                    var Melanio = L.marker([42.274468, -83.738242]).bindPopup('Javierto, Melanio (1921) 631 Tappan Ave., Ann Arbor, MI. Mechanical Engineering, College of Engineering').addTo(map),
+                        Jose = L.marker([42.272759, -83.743803]).bindPopup('Jose, Esteban L. (1921), 425 Cross St. Ann Arbor, MI. English, University of Michigan; Suguitan, Juan C. Civil Engineering, Uni of Michigan; Suyat, Donato T. High School, Ann Arbor High').addTo(map),
+                        Kaparas = L.marker([42.275250, -83.746037]).bindPopup('Kaparas, Manuel D. (1921), 308 Packard St. Ann Arbor, MI, Medicine, University of Michigan').addTo(map),
+                        Fernandez = L.marker([42.269303, -83.735333]).bindPopup('Fernandez, Salvador (1921), 1015 East University Street, Ann Arbor, MI, Chemical Engineering, Uni of Michigan').addTo(map),
+                        Fernando = L.marker([42.281488, -83.735556]).bindPopup('Fernando, Alejandro (1921), 110 Glen Ave, Ann Arbor, MI, Political Science, Uni of Michigan').addTo(map), 
+                        Maranon = L.marker([42.271196, -83.739413]).bindPopup('Maranon, Joaquin M. (1921), 822 Oakland Ave, Ann Arbor, MI, Plant Chemistry, Uni of Michigan').addTo(map),
+                        Marare = L.marker([42.275301, -83.733802]).bindPopup('Marare, Vicente Del R. (1921), 215 S. University Ave, Ann Arbor,  MI, Municipal Government, Uni of Michigan').addTo(map),
+                        Abada = L.marker([42.271220, -83.739413]).bindPopup('Abada, Esteban R. (1921), 822 Oakland Ave, English, Uni of Michigan').addTo(map),
+                        Asuzano = L.marker([42.270331, -83.740978]).bindPopup('Asuzano, Eustaquio A. (1921), 914 South State St. Civil Engineering, Uni of Michigan').addTo(map);
+                    
+                    var map2 = L.map('map2',{
+                    center: [42.331561, -83.049799],
+                    zoom: 13    
+                    });
+                    
+                    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',{
+                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map2);
+                    
+                    var Navarro = L.marker([42.350680, -83.059966]).bindPopup('Vicente A. Navarro (1919), 11 E. Alexandrine Ave, Detroit MI').addTo(map2),
+                        Valenzuela = L.marker([42.349475, -83.006129]).bindPopup('Jose T. Valenzuela (1917), 992 Canton Ave, Detroit, MI, Chemical Engineering, University of Michigan').addTo(map2);
+                          
+                    var FirDecade = L.layerGroup([Navarro, Valenzuela]);
+                    
+                    var Navarra = L.marker([42.334700, -83.052641]).bindPopup('Navarra, Salvador F. (1922), 225 Bagley Ave, Detroit MI. General course, Central High School').addTo(map2),
+                        Montinella = L.marker ([42.347819, -83.060400]).bindPopup('Montinela, E.(Jaw Iloilo) (1922). 93 Parson Street, Detroit, Mich. Auto engineer, Michigan State Auto School').addTo(map2),
+                        Manzanero = L.marker ([42.415848, -83.100520]).bindPopup('Manzanero, Esteban M. (1921), 80 Church St, Detroit, MI. Civil Engineering, Valparaiso University').addTo(map2),
+                        Ruiz = L.marker ([42.374284, -82.975360]).bindPopup('Ruiz, Elias L. (1921), 2946 St. Jean Ave, Detroit, MI. Civil Engineering, University of Detroit').addTo(map2),
+                        Conlu = L.marker ([42.361012, -82.953085]).bindPopup('Conlu, Mariano (1921), 443 Connors Ave. Detroit, MI. Cass Technical High School').addTo(map2),
+                        Espiritu = L.marker ([42.369746, -82.971301]).bindPopup('Espiritu, Celestino (1921), 11488 Kercheral Ave, Detroit, MI. Machinist, Ford Motor Co.').addTo(map2),
+                        Hernandez = L.marker ([42.415856, -83.100510]).bindPopup('Hernandez, Amado Z. (1921), 80 Church St. Detroit, MI, Civil Engineering, Tri-State College').addTo(map2),
+                        Aguilar = L.marker([42.347811, -83.060400 ]).bindPopup('Buenaventura Aguilar (1922), 93 Parsons St., Detroit, MI, Engineering, Detroit Junior College').addTo(map2),
+                        Casaclang = L.marker([42.334716, -83.052824]).bindPopup('Casaclang, Cornelio E. (1922), 225 Bagley Ave., Detroit, MI, Mechanical Engineering, University of Detroit').addTo(map2),
+                        Manzanero2 = L.marker([42.352196, -83.056827]).bindPopup('Manzanero, Dr. F.M. (1922), Womans Hospital, Detroit, MI, Medicine, Baylor College of Medicine').addTo(map2),
+                        Paguyo = L.marker([42.353534, -83.065245]).bindPopup('Paguyo, Manuel A. (1922) 4638 Cass Ave, Detroit, MI, Literary, Detroit Junior College').addTo(map2),
+                        Villareal = L.marker([42.337382, -83.053920]).bindPopup('Villareal, Mariano Conltj y (1922) 126 West Columbia Street, Detroit, MI, Commercial auto mechanic, Cass Technical High School').addTo(map2);
+
+                    var SecDecade = L.layerGroup([Navarro, Navarra, Montinella, Manzanero, Ruiz, Conlu, Espiritu, Hernandez, Aguilar, Casaclang, Manzanero2, Paguyo, Villareal]);
+                    
+                    var OverlayMaps = {
+                        "1910-1919" : FirDecade,
+                        "1920-1929" : SecDecade
+                    };
+                   
+                    L.control.layers(null, OverlayMaps).addTo(map2);                    
+                </script>
+                <div class="my_text text-left">
+                    <h5><strong>Source:</strong>"Directory of Filipino Students in the United States" by the Bureau of Insular Affairs</h5>
+                    <h4 class="my_text text-left"><strong>How to read the map</strong></h4>
+                    <h4 class="my_text text-left">The map on the left is of Ann Arbor; on the right, Detroit. Clicking on any of the place markers will provide information about the Filipinx student registered at that address, along with their declared major and school of attendance. The toggle in the right hand corner allows you to populate the map by decade.</h4>
+                    <h4 class="my_text text-left"><strong>The Pensionados (1900-1903) and Self-Supporting Student Immigrants (1910-1930s)</strong></h4>
+                    <h4 class="my_text text-left">Urban Analysis / settlement / displacement</h4>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">At a Glance:
+                        <strong>The First Filipinx Students</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="img/Det Only Fil.jpg" width="700" height="450" alt="">
+                    <h5>Source: Detroit Free Press</h5>
+                    <h3>Steven Mirasol
+                        <small>"Detroit's Only Filipino" (1904)</small>
+                        <h4 class="my_text text-left">Mirasol was taken to Detroit under Captain C.N. Purdy's care around 1904. Though Mirasol's location is unlisted, he provides an early record of Detroit's first Filipinx immigrants and the unique context to which immigrants were brought over. Around this time, Detroit Free Press publishes numerous articles on Fil-Ams with a focus on English-learning as sign of "civilizing" potential.</h4>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smith
+                        <small>Job Title</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <h3>John Smith
+                        <small>Job Title</small>
+                    </h3>
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
 
@@ -171,13 +207,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
 
 </body>
 
